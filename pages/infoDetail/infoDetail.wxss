@@ -1,0 +1,50 @@
+/* pages/infoDetail/infoDetail.wxss */
+.container4{
+  position: fixed;
+  left: 0px;
+  top: 26px;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.content-text{
+  margin: 20rpx;
+  font-size: 40rpx;
+  font-weight: 600rpx;
+  color: #333;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.image-item{
+  width: 100%;
+  height: 600rpx;
+}
+
+.type-title{
+  margin-left: 10rpx;
+  font-size: 80rpx;
+}
+.type-text{
+  font-size: 30rpx;
+  display:flex;
+  width: 90%;
+  justify-content: space-around;
+  /* align-content: space-between; */
+}
+
+.url-text{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}

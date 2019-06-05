@@ -1,0 +1,68 @@
+ <!--overview.wxml-->
+
+<view class='container2'>
+
+    <!-- 大类导航栏 -->
+    <!-- scroll-left属性可以控制滚动条位置 -->
+    <!-- scroll-with-animation滚动添加动画过渡 -->
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}" indicator-dots='true' indicator-active-color='#3F51B5' indicator-color='#CECECE'>
+    <block wx:for="{{category}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">
+        {{navItem.cat_name}}
+      </view>
+    </block>        
+  </scroll-view>
+  <!-- 页面内容 -->
+  <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+    <swiper-item wx:for="{{category}}" wx:for-item="catItem" wx:for-key="page" wx:key="page" class="tab-content">
+      <!--专业栏-->
+      <view class='content' wx:for="{{catItem.colleges}}"  wx:for-index="idx" wx:for-item="collegeItem" wx:key="ic">
+        <view class='content-college.pat{{idx%6}}' style ='height:{{collegeItem.majors.length * 50}}px' >
+            <view  class='content-text' style='margin: {{collegeItem.majors.length * 25-12}}px 9px'>
+            <!-- style='line-height:{{collegeItem.majors.length * 50}}px' -->
+              {{collegeItem.col_name}}
+            </view>
+        </view>
+        <view class="content-major" >
+          <i-cell-group wx:for="{{collegeItem.majors}}" wx:for-index="idx" wx:for-item="contentItem"  wx:key="idx">
+            <i-cell title="{{contentItem.m_name}}"is-link url="/pages/detail/detail?id={{contentItem.m_id}}">
+              <view slot="footer"><i-icon size="24" type="switch" /></view>
+            </i-cell>
+          </i-cell-group>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+<!--详情排名-->
+  <view class='icon-container' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd1'>
+    <i-icon  size='30' color='white' type="packup" />
+  </view>
+  <!-- <view class='btn'  >
+OK bindtap='unfold' 
+</view> -->
+
+  <view class='rankList-bg {{!unfolded? "" : "hidden"}}' animation='{{animationbg}}' ></view>
+  <view class='rankList-container'animation="{{animation}}"  bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd5'>
+    <view class='foldbtn' bindtap='fold'>
+    
+      <i-icon color="#243492" size="30" type="unfold" />
+    </view>
+    <view class='table'>
+      <view class='ranklist-title'>近三年{{category[currentTab].cat_name}}大类专业分流百分比</view>
+      <view class='ranklist-heads'>
+        <text class='ranklist-head'>专业名称</text>
+        <text class='ranklist-head1'>2018</text>
+        <text class='ranklist-head1'>2017</text>
+        <text class='ranklist-head1'>2016</text>
+      </view>
+      <view style='overflow-y:scroll; top:170rpx; position:absolute; height:80%'>
+        <view wx:for="{{disList}}" wx:for-item="list" wx:for-key="idx" wx:key="idx" class='ranklist-contents'>
+          <text class='ranklist-content'>{{list.m_name}}</text>
+          <text class='ranklist-content1'>{{list.f_rank == null? "暂无":list.f_rank}}</text>
+          <text class='ranklist-content1'>{{list.s_rank == null? "暂无":list.s_rank}}</text>
+          <text class='ranklist-content1'>{{list.t_rank == null? "暂无":list.t_rank}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+{
+  "usingComponents": {},
+  "pages": [
+    "pages/front/front",
+    "pages/help/help",
+    "pages/aboutUs/aboutUs",
+    "pages/overview/overview",
+    "pages/bulletin/bulletin",
+    "pages/info/info",
+    "pages/search/search",
+    "pages/infoDetail/infoDetail",
+    "pages/detail/detail",
+    "pages/sss/sss"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#243492",
+    "navigationBarTitleText": "专业助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/overview/overview",
+        "iconPath": "images/yilan.png",
+        "selectedIconPath": "images/yilan_selected.png",
+        "text": "一览"
+      },
+      {
+        "pagePath": "pages/front/front",
+        "iconPath": "images/dingwei.png",
+        "selectedIconPath": "images/dingwei_selected.png",
+        "text": "定位"
+      },
+      {
+        "pagePath": "pages/bulletin/bulletin",
+        "iconPath": "images/zhuan.png",
+        "selectedIconPath": "images/zhuan_selected.png",
+        "text": "发布"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#BDBDBD",
+    "selectedColor": "#243492"
+  },
+  "sitemapLocation": "sitemap.json"
+}

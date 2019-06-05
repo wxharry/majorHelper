@@ -1,0 +1,26 @@
+<!--pages/bulletin/bulletin.wxml-->
+
+<view class='container3'>
+  <view class='search'>
+    <navigator class="search-nav" url='/pages/help/help'>
+      <i-icon size='30' color='white' type="feedback" />
+      <!-- <image class='img-type' url="/pages/help.png" /> -->
+      <view class='search-text'>帮助</view>
+    </navigator>
+  </view>
+  <!-- <view class='text-major'>MAJOR</view> -->
+  <text class='text-major'>MAJOR</text>
+  <text class='text-helper'>HELPER</text>
+  <swiper class='card-box' previous-margin='200rpx' next-margin='200rpx' circular='true' autoplay='true' interval='5000' indicator-dots='true' indicator-active-color='#3F51B5' indicator-color='#CECECE'>
+    <swiper-item wx:for="{{card}}" wx:for-item="item" wx:for-index="idx" wx:key="idx" class='swiper-item' >
+      <!-- <view class='card card{{idx}}' bindtap='ontap' id='{{idx}}'> -->
+      <!-- <view catchtap='ontap'> -->
+        <navigator class='card card{{idx}}' url='/pages/info/info?id={{idx}}'>
+          <view class='title'>{{item.name}}</view>
+          <view><image class='img' src="/images/{{item.img_name}}.png"></image></view>
+        </navigator>
+      <!-- </view> -->
+    </swiper-item>
+  </swiper>
+</view>
+

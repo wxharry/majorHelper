@@ -1,0 +1,272 @@
+
+/*顶部标签栏*/
+.nav {
+  font-size: 32rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92rpx;
+  line-height: 40rpx;
+  border-radius: 0px 0px 60rpx 60rpx;
+  background-color: rgba(36, 52, 146, 1);
+  text-align: center;
+  box-shadow: 0px 4rpx 30rpx 0px black;
+  /* box-shadow: 2rpx 4rpx 16rpx 0rpx rgba(170, 170, 170, 1); */
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  z-index: 50;
+}
+.nav-item {
+  height: 118rpx;
+  margin: 34rpx 0;
+  line-height: 40rpx;
+  border-radius: 70rpx 0px 0px 0px;
+  color: rgb(84, 97, 212);
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.nav-item.active{
+    color:white;
+}
+
+/*学院专业信息一览表*/
+.tab{
+  line-height: 40rpx;
+  background-color: rgba(36, 52, 146, 1);
+  text-align: center;
+}
+
+.tab-item {
+  height: 118rpx;
+  line-height: 40rpx;
+  background-color: rgba(250,250, 250, 1);
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+
+/*内容页*/
+.tab-box{
+  height: 93%;
+  background-color: rgba(248, 248, 248, 1);
+  margin-top: 80rpx;
+  margin-bottom: 170rpx;
+}
+.tab-content{
+  overflow-y: scroll;
+  
+}
+
+/*content*/
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 90rpx 0;
+  animation: bounceInLeft;
+  animation-duration: 1s;
+}
+
+.content-college{
+  position: fixed;
+  left: 0;
+  width: 262rpx;
+  z-index: 1;
+  border-radius: 0rpx 40rpx 40rpx 0rpx;
+  box-shadow: 0rpx 4rpx 24rpx 0rpx rgba(111, 111, 111, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  align-items: center;
+}
+.content-college.pat0{
+  background-color: #3B4367;
+}
+.content-college.pat1{
+  background-color:#626989;
+}
+.content-college.pat2{
+  background-color: #B2B6C9;
+}
+.content-college.pat3{
+  background-color: #53576B;
+}
+.content-college.pat4{
+  background-color: #464F78;
+}
+.content-college.pat5{
+  background-color: #7C85BA;
+}
+
+.content-text{
+  color: rgba(255, 255, 255, 1);
+  font-size: 28rpx;
+  font-family: PingFangSC-regular;
+  height: 32rpx;
+  /* line-height: 40rpx; */
+  /* margin: 18rpx  18rpx; */
+  /* text-overflow:ellipsis; */
+}
+
+.content-major{
+  position: relative;
+  left: 30%;
+  width: 68%;
+  color: rgba(16, 16, 16, 1);
+  flex-direction: column; 
+  align-items: left;
+}
+
+
+/*rank*/
+.title{
+  position: fixed;
+  left: 0rpx;
+  top: 296rpx;
+  width: 262rpx;
+  height: 576rpx;
+  line-height: 40rpx;
+  border-radius: 0rpx 40rpx 40rpx 0rpx;
+  background-color: rgba(67, 75, 118, 1);
+  text-align: center;
+  box-shadow: 0px 4rpx 24rpx 0rpx rgba(111, 111, 111, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+.icon-container{
+  position: fixed;
+  left: 316rpx;
+  bottom: 0rpx;
+  width: 114rpx;
+  height: 70rpx;
+  line-height: 40rpx;
+  border-radius: 30rpx 30rpx 0px 0px;
+  background-color: rgba(100, 199, 231, 1);
+  color: rgba(100, 199, 231, 1);
+  font-size: 28rpx;
+  text-align: center;
+  box-shadow: 2rpx 2rpx 14rpx 0rpx rgba(184, 184, 184, 1);
+  font-family: Arial;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+
+.rankList-bg.hidden{
+  z-index: 98;
+}
+
+.rankList-bg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 40rpx;
+  background-color: rgba(21, 29, 69,1);
+  opacity: 0;
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  z-index: -10;
+}
+
+.rankList-container{
+  position: fixed;
+  top: 100%;/*22px;*/
+  /* width: 734rpx; */
+  width: 97%;
+  margin: 0 8rpx;
+  height: 1036rpx;
+  padding-bottom: 100rpx;
+  line-height: 40rpx;
+  border-radius: 40rpx 40rpx 0px 0px;
+  background-color: rgba(249, 249, 249, 1);
+  color: rgba(36, 52, 146, 1);
+  font-size: 28rpx;
+  text-align: center;
+  box-shadow: 2rpx 2rpx 26rpx 0rpx rgba(255, 255, 255, 0);
+  font-family: Arial;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-content: center;
+}
+
+.foldbtn{
+  width: 100%;
+  height: 66rpx;
+  text-align: center;
+  z-index: 99;
+}
+
+.ranklist-title{
+  position: absolute;
+  /* left: 238rpx; */
+  /* top: 102rpx; */
+  width: 600rpx;
+  height: 46rpx;
+  color: rgba(36, 52, 146, 1);
+  font-size: 32rpx;
+  font-family: PingFangSC-bold;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranklist-heads{
+  /* position: absolute;
+  top:158rpx; */
+  line-height: 40rpx;
+  margin-top:50rpx;
+  height: 40rpx;
+  display:flex;
+}
+
+.ranklist-head{
+  color: rgba(36, 52, 146, 1);
+  font-size: 28rpx;
+  width: 360rpx;
+  margin: 2rpx;
+  text-align: center;
+  font-family: PingFangSC-regular;
+}
+.ranklist-head1{
+  width: 118rpx;
+  margin: 2rpx;
+  color: rgba(36, 52, 146, 1);
+  font-size: 28rpx;
+  text-align: center;
+  font-family: PingFangSC-regular;
+}
+
+.ranklist-contents{
+  /* margin-top: 20rpx; */
+  line-height: 60rpx;
+  display: flex;
+  height: 60rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ranklist-content{
+  color: #1B1F37;
+  font-size: 28rpx;
+  width: 360rpx;
+  margin: 2rpx;
+  text-align: center;
+  font-family: PingFangSC-regular;
+  background-color: white;
+}
+
+.ranklist-content1{
+  width: 118rpx;
+  margin: 2rpx;
+  color: #1B1F37;
+  font-size: 25rpx;
+  text-align: center;
+  font-family: PingFangSC-regular;
+  background-color: white;
+}

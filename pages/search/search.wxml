@@ -1,0 +1,32 @@
+<!--search.wxml-->
+<!--form bindsubmit="formSubmit">
+<!--提交按钮  -->
+
+<!-- 上边搜索栏 -->
+<view class='top'>
+<!-- 如果是搜索结果 -->
+  <view  wx:if="{{!hideSearch}}"  class='searchBar'>
+    <view class='inputBar'>
+      <input name="id" placeholder='搜索一个你想了解的专业吧' placeholder-class='placeholder' bindinput='listenerSearchInput' bindconfirm="toSearch" focus='true'/>
+    </view>
+    <i-icon bindtap="toSearch" class='searchBtn' size='30' color='white' type="search" />
+  </view>
+  <!-- 如果是标签结果 -->
+  <view wx:else class='toptext'>
+    <view style='font-size: 36rpx;'>你可能感兴趣的专业</view>
+  </view>
+</view>
+
+<view wx:if="{{hideSearch || result}}" class='search-container'>
+  <!-- 搜索结果 -->
+  <view class='majors'>
+    <view wx:for="{{majors}}" wx:for-index="idx" wx:for-item="contentItem"  wx:key="idx">
+      <view class="results">
+        <view class='head-type'/>
+        <view class='text-type' catchtap='onTap' id='{{contentItem.m_id}}'>{{contentItem.m_name}}</view>
+        <view class='icon-type'><i-icon size="40" color ='rgba(36, 52, 146, 1)' type="switch"/></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- title="{{contentItem.m_name}}"is-link url="/pages/detail/detail?id={{contentItem.m_id}}" -->

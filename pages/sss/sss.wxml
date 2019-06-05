@@ -1,0 +1,4 @@
+<!--pages/sss/sss.wxml-->
+<text>pages/sss/sss.wxml</text>
+<button bindtap='ontap'>tap</button>
+<button bindtap='getdoc'>ssss</button>

@@ -1,0 +1,135 @@
+
+.search-container{
+  overflow-y: scroll;
+  position: fixed;
+  left: 0px;
+  top: 78px;
+  width: 100%;
+  height: 1050rpx;
+  line-height: 20px;
+  border-radius: 30px 30px 0px 0px;
+  color: rgba(247, 247, 247, 1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  animation: bounceInUp 1s;
+}
+
+.top{
+  position: fixed;
+  width: 100%;
+  height: 148rpx;
+  line-height: 40rpx;
+  background-color: rgba(36, 52, 146, 1);
+  text-align: center;
+  /* box-shadow: 2px 2px 14px 0px rgba(63, 81, 181, 1); */
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  z-index: 99;
+}
+
+.searchBar{
+  position: fixed;
+  left: 48rpx;
+  top: 32rpx;
+  width: 652rpx;
+  height: 80rpx;
+  line-height: 40rpx;
+  border-radius: 60rpx;
+  background-color: rgba(85, 102, 194, 1);
+  text-align: left;
+  box-shadow: 2rpx 4rpx 16rpx 0rpx rgba(255, 255, 255, 0);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+
+.placeholder{
+  color:#93A3FB;
+  font-size: 28rpx;
+  text-align: left;
+  width: 500rpx;
+  font-family: PingFangSC-regular;
+}
+
+.inputBar{
+  position: fixed;
+  left: 100rpx;
+  top: 52rpx;
+  width: 536rpx;
+  height: 40rpx;
+  color: white;/*输入字颜色、光标颜色*/
+}
+
+text{
+  position: fixed;
+  left: 624rpx;
+  top: 44rpx;
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 28rpx;
+}
+.searchBtn{
+  position: fixed;
+  left: 624rpx;
+  top: 44rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.toptext{
+  line-height: 148rpx;
+  width: 100%;
+  /* height: 25px; */
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: PingFangSC-regular;
+  animation: slideInDown 1s;
+}
+
+.majors{
+  position: absolute;
+  width: 100%;
+}
+
+.results{
+  width: 720rpx;
+  height: 180rpx;
+  border-radius: 40rpx 60rpx 60rpx 40rpx;
+  margin: 40rpx 16rpx;
+  text-align: center;
+  box-shadow: 2px 2px 20px 1px rgba(206, 206, 206, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  display: flex;
+  line-height: 180rpx;
+  align-content: space-between;
+  animation: bounceIn 1s;
+}
+
+.head-type{
+  width: 50rpx;
+  height: 180rpx;
+  line-height: 40rpx;
+  border-radius: 40rpx;
+  background-color: rgba(36, 52, 146, 1);
+  text-align: center;
+  box-shadow: 2rpx 0rpx 4rpx 0rpx rgba(230, 230, 230, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+
+.text-type{
+  color: black;
+  margin-left: 40rpx;
+  height: 180rpx;
+  width: 620rpx;
+  text-align: left;
+  white-space: nowrap;
+  overflow:hidden;
+  z-index: 2;
+}
+
+.icon-type{
+  line-height: 180rpx;
+  right:30rpx;
+  position: absolute;
+}

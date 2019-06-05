@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-tag": "../../dist/tag/index",
+    "i-icon":"../../dist/icon/index"
+  }
+}

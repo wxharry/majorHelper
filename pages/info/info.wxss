@@ -1,0 +1,118 @@
+/* pages/infoDetail/info.wxss */
+.container4{
+  position: fixed;
+  left: 0px;
+  top: 26px;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.text-major{
+  position: fixed;
+  left:240rpx;
+  top: 120rpx;
+  color: rgba(240, 240, 240, 1);
+  font-size: 72px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.text-helper{
+  position: fixed;
+  left: 56rpx;
+  top: 900rpx;
+  color: rgba(240, 240, 240, 1);
+  font-size: 72px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.leftblock{
+  position: fixed;
+  left: 0rpx;
+  top: 18rpx;
+  width: 254rpx;
+  height: 120%;
+  line-height: 40rpx;
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: center;
+  box-shadow: 0rpx 4rpx 24rpx 0rpx rgba(255, 255, 255, 0);
+  font-family: Arial;
+ 
+  z-index: 99;
+  /* animation: bounceInUp 1s; */
+}
+
+.leftblock.color0{
+  background-color:#8287A4;
+  border: 2rpx solid #8287A4;
+}
+.leftblock.color1{
+  background-color: #1A266B;
+  border: 2rpx solid rgba(26, 38, 107, 1);
+}
+.leftblock.color2{
+  background-color: #6770A0;
+  border: 2rpx solid #6770A0;
+}
+.leftblock.color3{
+  background-color: #C3C6D7;
+  border: 2rpx solid #C3C6D7;
+}
+
+
+.title{
+  position: fixed;
+  left: 40rpx;
+  top: 110rpx;
+  height: 116rpx;
+  color: rgba(255, 255, 255, 1);
+  font-size: 40rpx;
+  text-align: left;
+  font-family: PingFangSC-bold;
+  display: inline-block;
+}
+
+.img{
+  position: fixed;
+  left: 0rpx;
+  top: 740rpx;
+  width: 310rpx;
+  height: 310rpx;
+}
+
+.list{
+  position: fixed;
+  height: 100%;
+  left: 206rpx;
+  top: 160rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rpx;
+  overflow-y: scroll;
+  margin-bottom: 160rpx;
+  z-index: 3;
+}
+
+.list-item{
+  width: 542rpx;
+  height: 160rpx;
+  text-align: center;
+  box-shadow: 0rpx 4rpx 24rpx 0rpx rgba(213, 213, 213, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  background-color: white;
+  margin: 16rpx;
+  line-height: 160rpx;
+  /* animation: bounceInLeft 1s; */
+}
+
+.list-text{
+  color: #686868 100%;
+  font-size: 36rpx;
+}

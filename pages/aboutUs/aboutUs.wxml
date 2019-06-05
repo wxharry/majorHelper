@@ -1,0 +1,11 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<view class='container4'>
+  <view class='info' wx:for="{{info}}" wx:for-item="item" wx:key="k">
+    <view class='head'>
+      <view class='dot'></view>
+      <view class='title'><text>{{item.title}}</text></view>
+    </view>
+    <view class='content'><text>{{item.content}}</text></view>
+  </view>
+
+</view>

@@ -1,0 +1,23 @@
+<!--front.wxml-->
+
+<view class='container1'>
+  <view class='search'>
+    <navigator class="search-nav" url='/pages/search/search'>
+      <i-icon size='30' color='white' type="search" />
+    </navigator>
+  </view>
+  <view class="text-container">
+    <text>选择1~3个\n你感兴趣的标签</text>
+  </view>
+  <view class='tags'>
+    <view class='tag {{item.flag ? "checked":""}}' wx:for="{{interests}}" wx:key="idx"  wx:for-index="idx" wx:for-item="item" bindtap='onTap' id="{{idx}}">
+      {{item.i_content}}
+    </view>
+  </view>
+  <view class='nav' animation="{{animation}}" bindtap='toSearchPage'>
+    <!-- <navigator url='/pages/search/search?hide=true'> -->
+      <i-icon size='30' color='white' type="enter" />
+    <!-- </navigator> -->
+  </view>
+</view>
+

@@ -1,0 +1,21 @@
+<!--pages/infoDetail/infoDetail.wxml-->
+<view class='container4' style='overflow-y:scroll;'>
+  <!-- <view class='content-text'>
+    <text>{{content}}</text>
+  </view>
+  <view>
+    <view><text class='type-title'>{{article.title}}</text></view>
+    <view class='type-text'>
+      <view><text>发布时间：{{article.pub_time}}</text></view>
+      <view><text>作者：{{article.author}}</text></view>
+    </view>
+  </view> -->
+  <view class='image-container'>
+    <block wx:for="{{article.img_link}}" wx:for-item="item" wx:for-index="idx" wx:key="idx">
+      <view class='image-container' >
+        <image class='image-item' src="{{img_path}}" mode='widthFix'></image>
+      </view>
+    </block>
+    <!-- <image class='image-container' src='{{img_path}}'></image> -->
+  </view>
+</view>

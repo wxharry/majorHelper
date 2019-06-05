@@ -1,0 +1,60 @@
+/* pages/aboutUs/aboutUs.wxss */
+.container4{
+  /* top: 26px; */
+  /* width: 750rpx; */
+  height: 1334rpx;
+  /* line-height: 20px; */
+  border-radius: 100rpx 100rpx 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: 20rpx;
+}
+
+.info{
+  margin: 80rpx 40rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.head{
+  width: 400rpx;
+  display:flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+}
+.dot{
+  /* position: absolute; */
+  /* left: 44px;
+  top: 110px; */
+  width: 30rpx;
+  height: 80rpx;
+  /* line-height: 20px; */
+  border-radius: 20rpx;
+  background-color: rgba(40, 58, 158, 1);
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+.title{
+  /* left: 71px; */
+  /* top: 110px; */
+  width: 160px;
+  height: 80rpx;
+  color: rgba(36, 52, 146, 1);
+  font-size: 40rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.content{
+  /* width: 400rpx; */
+  /* height: 80rpx; */
+  margin: 0 80rpx;
+  color: rgba(36, 52, 146, 1);
+  font-size: 35rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+  display: inline-block;
+
+}
