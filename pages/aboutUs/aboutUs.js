@@ -1,6 +1,5 @@
 // pages/aboutUs/aboutUs.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -8,11 +7,11 @@ Page({
     info:[
       {
         title:"开发者",
-        content:"bryant\nharry\nkun\njw"
+        content:"Bryant\nHarry\nDorr\nCoyote"
       },
       {
         title:"联系我们",
-        content:"手机：12345674567"
+        content: "手机：15800391290\n微信：286851789"
       }
     ]
   },

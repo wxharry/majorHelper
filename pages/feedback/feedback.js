@@ -1,25 +1,42 @@
-// pages/help/help.js
+// pages/feedback/feedback.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    text:[
-      {
-        name:"问题反馈",
-        id_name:"feedback"
-      },
-      {
-        name: "使用手册",
-        id_name:"instruct"
-      },
-      {
-        name: "关于我们",
-        id_name:"aboutUs"
-      },
-    ]
-
+    len:0,
+    value:'',
+    heightflag:true,
+    touch:[289,384]
+  },
+  input:function(e){
+    console.log(e.detail)
+    this.setData({
+      len: e.detail.value.length,
+      value: e.detail.value
+    })
+    // if (e.detail.value.length > 48){
+    //   this.setData({
+    //     heightflag:true
+    //   })
+    // }
+  },
+  submit:function(){
+    var value = this.data.value
+    console.log("submit "+ value)
+    // wx.request({
+    //   url: '',
+    // })
+  },
+  touchMove: function (e) {
+    let sx = e.touches[0].pageX;
+    let sy = e.touches[0].pageY;
+    console.log(sx, sy);
+    this.data.touch = [sx, sy]
+    this.setData({
+      touch: e.touch[0]
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -75,19 +92,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onTap: function(e){
-    console.log(e)
-    console.log(e.target.id)
-    if (e.target.id == 1){
-      wx.showModal({
-        title: '抱歉',
-        content: '该功能暂未开放',
-        showCancel: false,
-      })
-    }
-  },
-  fail:function(e){
-    console.log("fail")
   }
 })

@@ -1,0 +1,18 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='container' >
+  <view class="input-container">
+  <!-- <view class=''> -->
+    <textarea placeholder="在此输入您的问题或者建议" bindinput='input' maxlength='400' auto-focus auto-height='{{heightflag}}' class='placeholder'/>
+  </view>
+  <view class='text-type'>
+    {{400-len}}
+  </view>
+  
+
+  <view class='submit-btn' bindtap='submit'>
+    <image src='/images/icon_submit.png' class='submit-icon'/>
+    <view class='submit-text'>
+      发送
+    </view>
+  </view>
+</view>

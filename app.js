@@ -6,7 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     wx.setEnableDebug({
-      enableDebug: true
+      enableDebug: false
     })
     // 登录
     wx.login({

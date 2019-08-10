@@ -28,7 +28,7 @@ Page({
         flag: false
       },
       {
-        i_content: "化学 生物",
+        i_content: "生物",
         i_id: 14,
         flag: false
       }],
@@ -46,7 +46,7 @@ Page({
       header: {'content-type': 'application / json'},
       method: 'GET',
       success: function(res) {
-        // console.log(res);
+        console.log(res);
         ins = res.data.data.interests
         for(var i=0;i < ins.length; i++){
           ins[i]['flag']=false

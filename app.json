@@ -2,15 +2,17 @@
   "usingComponents": {},
   "pages": [
     "pages/front/front",
+    "pages/feedback/feedback",
     "pages/help/help",
-    "pages/aboutUs/aboutUs",
     "pages/overview/overview",
+    "pages/detail/detail",
+    "pages/aboutUs/aboutUs",
     "pages/bulletin/bulletin",
     "pages/info/info",
     "pages/search/search",
     "pages/infoDetail/infoDetail",
-    "pages/detail/detail",
     "pages/sss/sss"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

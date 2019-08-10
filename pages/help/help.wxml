@@ -1,16 +1,20 @@
 <!--pages/help/help.wxml-->
-<view class='img-bg'></view>
 <view>
-  <image class='img-type' src='/images/shulogo.png'/>
-  <view class='img-container'></view>
-  <view class='btn-container'>
-    <view wx:for="{{text}}" wx:for-index="idx" wx:key="key" wx:for-item="item">
-      <navigator class='btn' url="/pages/{{item.id_name}}/{{item.id_name}}" bindtap='onTap' id="{{idx}}">
-        <view class='head.style{{idx}}'/>
-        <view class='text-type'><text>{{item.name}}</text></view>
-        <view class='icon-type'><i-icon type="enter" size="28" color='#243492'/></view>
-      </navigator>
+  <view class='img-bg'></view>
+  <view>
+    <image class='img-type' src='/images/shulogo.png'/>
+    <view class='img-container'></view>
+    <view class='btn-container'>
+      <view wx:for="{{text}}" wx:for-index="idx" wx:key="key" wx:for-item="item">
+        <navigator class='btn' url="/pages/{{item.id_name}}/{{item.id_name}}" bindtap='onTap' id="{{idx}}">
+          <view class='head.style{{idx}}'/>
+          <view class='text-type'><text>{{item.name}}</text></view>
+          <view class='icon-type'><i-icon type="enter" size="28" color='#243492'/></view>
+        </navigator>
+      </view>
     </view>
   </view>
 </view>
+
   <!-- <image class='bgimg' src='/images/bg.png'/> -->
+  <!-- bindtap='onTap' id="{{idx}}" -->

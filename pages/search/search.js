@@ -19,6 +19,7 @@ Page({
   },
   listenerSearchInput: function (e) {
     var searchIn = e.detail.value;
+    // console.log(searchIn)
     this.setData({
       searchInput: searchIn
     })

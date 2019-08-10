@@ -1,8 +1,9 @@
 <!--detail.wxml-->
 <!-- <scroll-view scroll-y="true" > -->
+<view class='container'>
   <view>
     <view class='text-container' >
-      <text class='text-name'>{{detail.m_name}}</text>
+      <text class='text-name' style='font-size:{{detail.m_name.length < 10 ? 56 : 673/detail.m_name.length }}rpx'>{{detail.m_name}}</text>
       <text class='text-title'>上年大类分流位次</text>
       <text class='text-{{detail.rank_precent=="None"?"none":"rate"}}'>{{detail.rank_precent=='None'?'无历年分流情况':detail.rank_precent+'%'}}</text>
       <text class='text-title1'>上年录取人数</text>
@@ -41,4 +42,5 @@
       </view>
     </swiper-item>
   </swiper>
+</view>
 <!-- </scroll-view> -->
