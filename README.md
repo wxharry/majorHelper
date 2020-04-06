@@ -8,3 +8,9 @@ only the front end part
 It is personally my first project
 The knowledge of front end was not solid
 Sorry if there are bugs and flaws
+
+
+ui动画：  
+https://daneden.github.io/animate.css/  
+ui组件：  
+https://weapp.iviewui.com/
